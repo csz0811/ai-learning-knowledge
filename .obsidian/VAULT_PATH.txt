@@ -1,0 +1,3 @@
+VAULT_ROOT=/Users/hechengfajituan/Desktop/AI学习知识库
+PRIMARY=true
+SYNC_FROM=/Users/hechengfajituan/.openclaw/workspace/AI学习知识库_旧副本_20260814

@@ -1,0 +1,81 @@
+/* ============================================================
+ *  星空图谱 v2 — 真正星海版
+ *  启用：Settings → 外观 → CSS 代码片段 → 打开 starfield
+ * ============================================================ */
+
+/* 1) 深空径向渐变背景（不是死黑，是从中心一点微光散开的星海） */
+.graph-view,
+.workspace-leaf-content[data-type="graph"] .view-content {
+  background:
+    radial-gradient(ellipse at 25% 15%, #0a0a2a 0%, #020210 45%, #000000 100%),
+    #000 !important;
+}
+
+/* 2) 节点：三重视星光晕，颜色 = 节点自身色 */
+.graph-node {
+  filter:
+    drop-shadow(0 0 2px currentColor)
+    drop-shadow(0 0 6px currentColor)
+    drop-shadow(0 0 12px rgba(255,255,255,0.4));
+  transition: filter 0.25s ease;
+}
+
+/* 3) 节点圆点本身变小（星点感而非大球） */
+.graph-node .graph-node-circle {
+  width: 4px !important;
+  height: 4px !important;
+  border-width: 0 !important;
+}
+
+/* 4) 中心枢纽（被双链最多的笔记）放大 + 暖金色爆闪 */
+.graph-node.is-current .graph-node-circle,
+.graph-node.is-focused .graph-node-circle {
+  width: 14px !important;
+  height: 14px !important;
+  filter:
+    drop-shadow(0 0 6px #fff)
+    drop-shadow(0 0 14px #ffd47a)
+    drop-shadow(0 0 28px #ffaa3a);
+}
+
+/* 5) 鼠标悬停：白光大爆炸 + 闪烁 */
+.graph-node:hover {
+  filter:
+    drop-shadow(0 0 8px #fff)
+    drop-shadow(0 0 18px currentColor) !important;
+}
+.graph-node:hover .graph-node-circle {
+  animation: twinkle 0.9s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.4; transform: scale(1.4); }
+}
+
+/* 6) 连线：星轨般微弱蓝光 */
+.graph-edge {
+  stroke: rgba(140, 190, 255, 0.28);
+  stroke-width: 1px;
+  filter: drop-shadow(0 0 1.5px rgba(140, 190, 255, 0.5));
+}
+
+/* 7) 节点标签：默认半透明星尘，hover/聚焦时全亮 */
+.graph-node text {
+  fill: rgba(200, 220, 255, 0.55);
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  text-shadow: 0 0 4px rgba(200, 220, 255, 0.4);
+}
+.graph-node.is-focused text,
+.graph-node.is-current text,
+.graph-node:hover text {
+  fill: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 0 6px #fff;
+}
+
+/* 8) 关系图谱设置面板（左侧）也暗化，避免刺眼 */
+.graph-controls {
+  background: rgba(10, 10, 26, 0.85) !important;
+  color: rgba(200, 220, 255, 0.8) !important;
+  border-radius: 6px;
+}
