@@ -1,0 +1,2 @@
+﻿# 强制所有文本文件使用 LF 换行符，避免 Mac/Windows 同步时刷无意义的换行差异
+* text=auto eol=lf
