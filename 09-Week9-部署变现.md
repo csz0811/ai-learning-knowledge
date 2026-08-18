@@ -44,11 +44,11 @@ __pycache__/
 ```
 
 ## 三、部署方案对比
-| 方案 | 状态 | 结论 |
-|:---|:---|:---|
-| Streamlit Cloud | 停服 | ❌ 不可用 |
+| 方案                  | 状态                      | 结论      |
+| :------------------ | :---------------------- | :------ |
+| Streamlit Cloud     | 停服                      | ❌ 不可用   |
 | Hugging Face Spaces | 配额耗尽（cpu-basic limit=0） | ❌ 暂时不可用 |
-| **Zeabur** | ✅ 可用，免费层够用 | ✅ 当前最优 |
+| **Zeabur**          | ✅ 可用，免费层够用              | ✅ 当前最优  |
 
 ## 四、Zeabur 部署 Streamlit 最小配置
 Zeabur 识别 Streamlit 只靠 `requirements.txt` + `streamlit_app.py`（或 `app.py`）。
