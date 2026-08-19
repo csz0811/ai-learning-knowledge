@@ -1,25 +1,39 @@
 #!/bin/bash
 #===========================================================
-# skill 同步脚本
+# skill 同步脚本（双端兼容 v1.2，2026-08-20）
 # 把知识库里的 skill 源文件同步到各工具的 skill 目录
 #
 # 使用方法：./sync-skills.sh
-# 
-# 依赖：rsync（macOS 自带）
+# 依赖：rsync（macOS 自带；Windows 需 Git Bash/WSL，纯 PowerShell 不支持 bash）
+#
+# 路径策略：
+#   Mac/Linux  ：默认 ~/Desktop/<知识库>/资产层/skills（可用 KB_HOME 覆盖）
+#   Windows    ：读 KB_HOME 环境变量，指向 D 盘知识库根目录
+#                回家后 Set：export KB_HOME='/d/你实际的文件夹名' 并写入 ~/.bashrc 永久生效
 #===========================================================
 
-# 知识库 skill 源文件目录
-SOURCE_DIR="$HOME/Desktop/AI学习知识库/资产层/skills"
-
-# 同步目标
-OPENCLAW_SKILLS="$HOME/.qclaw/skills"
-CLAUDE_CODE_SKILLS="$HOME/.claude/skills"
-
-# 颜色输出
+# 颜色输出（提前定义，供路径提示使用）
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
+
+# 知识库 skill 源文件目录（双端：OS 检测 + KB_HOME 兜底，不写死任何平台路径）
+if [[ "$OS" == "Windows_NT" ]] || [[ "$OSTYPE" == "msys"* ]] || [[ "$OSTYPE" == "cygwin"* ]]; then
+    # Windows 端：必须设 KB_HOME（如 /d/AI学习知识库）
+    if [ -z "${KB_HOME}" ]; then
+        echo -e "${YELLOW}⚠ 未检测到 KB_HOME，Windows 端已用兜底 /d/AI学习知识库。${NC}"
+        echo -e "${YELLOW}  请在 Git Bash 执行：export KB_HOME='/d/你实际的文件夹名'，并写入 ~/.bashrc 永久生效。${NC}"
+    fi
+    SOURCE_DIR="${KB_HOME:-/d/AI学习知识库}/资产层/skills"
+else
+    # Mac / Linux
+    SOURCE_DIR="${KB_HOME:-$HOME/Desktop/AI学习知识库}/资产层/skills"
+fi
+
+# 同步目标
+OPENCLAW_SKILLS="$HOME/.qclaw/skills"
+CLAUDE_CODE_SKILLS="$HOME/.claude/skills"
 
 echo "=========================================="
 echo "  skill 同步脚本"
