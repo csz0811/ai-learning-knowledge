@@ -19,4 +19,4 @@
 - 通知/提示动画
 
 ## 备注
-URL 待补（来自视频截图）
+URL：https://animejs.com

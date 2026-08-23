@@ -24,7 +24,7 @@ tags: [W11, RAG, LangChain, 复习清单, 已完成]
 
 ### D1 DocumentLoader（评分 92）
 - 内容：LangChain 1.x 包结构（langchain_community / langchain_openai / langchain_chroma），Loader 选型（PyMuPDF / pypdf / docx2txt）
-- 关键：1.x 包全拆，教程老写法 import 失败；装包实测：langchain 1.3.15 + langchain-community 0.4.2 + langchain-openai 1.5.1 + langchain-chroma 1.8 + pypdf 6.16.1 + docx2txt 0.9
+- 关键：1.x 包全拆，教程老写法 import 失败；装包实测：langchain 1.3.15 + langchain-community 0.4.2 + langchain-openai 1.5.1 + langchain-chroma 1.1.0 + pypdf 6.16.1 + docx2txt 0.9
 - 评分：92 分
 
 ### D2 bge 中文 Embedding
@@ -114,8 +114,8 @@ tags: [W11, RAG, LangChain, 复习清单, 已完成]
 
 ## 五、协作中枢建议清单（标待拍板）
 
-- [ ] W11 周总已收官，D5/D6/D7 每日文件待安全策略恢复后落档（要点已在聊天，不丢）
-- [ ] 留言板使用说明.md 补"学习期小舟只读、不进场"写死条目
+- [x] W11 周总已收官，D5/D6/D7 每日文件已落档（commit `32fc798`）
+- [ ] 留言板使用说明.md 补"学习期小舟只读质检员、不进场"写死条目
 - [ ] W12 项目期：提供业务需求 + 原始文档（Markdown/PDF/TXT 最稳）+ 约束
 
 > 🔗 返回：[[00-学习路线图]]｜[[10-Week10-向量库]]｜[[12-Week12-FAQ机器人]]

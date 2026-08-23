@@ -18,4 +18,4 @@
 - 用户交互界面
 
 ## 备注
-URL 待补（来自视频截图）
+URL：https://ui.aceternity.com

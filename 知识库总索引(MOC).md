@@ -5,7 +5,7 @@
 
 ## ① 学习层（怎么学的）
 - 总路线：`00-学习路线图.md`
-- 周总文档：`01-Week1-环境语法` / `02-Week2-判断循环` / `03-Week3-函数模块` / `04-Week4-API入门` / `05-Week5-Prompt基础` / `06-Week6-结构化输出` / `07-Week7-API调用` / `08-Week8-多轮Streamlit` / `09-Week9-部署变现` / `10-Week10-向量库` / `11-Week11-LangChainRAG`(进行中) / `12-Week12-FAQ机器人`(占位) / `13~17-WeekX`(占位)
+- 周总文档：`01-Week1-环境语法` / `02-Week2-判断循环` / `03-Week3-函数模块` / `04-Week4-API入门` / `05-Week5-Prompt基础` / `06-Week6-结构化输出` / `07-Week7-API调用` / `08-Week8-多轮Streamlit` / `09-Week9-部署变现` / `10-Week10-向量库` / `11-Week11-LangChainRAG`(已完成) / `12-Week12-FAQ机器人`(占位) / `13~17-WeekX`(占位)
 - 每日文件：`00-每日练习/`
 
 ## ② 资产层（拿来就能用的）

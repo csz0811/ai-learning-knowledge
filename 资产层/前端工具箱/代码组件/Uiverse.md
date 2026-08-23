@@ -13,4 +13,4 @@
 - 补充 Aceternity UI 的组件选择
 
 ## 备注
-URL 待补（来自视频截图）
+URL：https://uiverse.io
