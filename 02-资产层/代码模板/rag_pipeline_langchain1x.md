@@ -110,6 +110,6 @@ print(rag_chain.invoke("你的问题"))  # 或 rag_chain.invoke(input("问题: "
 
 ## 五、关联
 
-- 学习层：[[11-Week11-LangChainRAG]]（D1-D7 完整过程）
+- 学习层：[[04-学习档案/周总/11-Week11-LangChainRAG]]（D1-D7 完整过程）
 - 项目层：W12 FAQ 机器人（待建，直接复用本卡）
 - 每日文件：[[04-学习档案/每日练习/W11-D5-完整RAG闭环]] [[04-学习档案/每日练习/W11-D6-答案溯源]]
