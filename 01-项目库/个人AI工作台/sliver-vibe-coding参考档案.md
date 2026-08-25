@@ -99,7 +99,7 @@ python3 scripts/build_runtime_bundle.py --target claude-code --output ~/.claude/
 Sliver Vibe Coding（企业级，高阶）
     │
     ├── 借鉴思路 → AI编程全流程模板.md（已提炼精华）
-    ├── 借鉴思路 → 资产层/踩坑手册.md（防假完成规则）
+    ├── 借鉴思路 → 02-资产层/踩坑手册.md（防假完成规则）
     └── 最终目标：W17 之后直接装 Sliver，用完整框架
 ```
 
