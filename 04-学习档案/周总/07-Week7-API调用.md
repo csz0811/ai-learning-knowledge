@@ -59,6 +59,7 @@ print(resp.choices[0].message.content)
 - 多轮本质：每轮把**整个历史**重新发给模型（不是 AI 真记得）
 - tokens 随历史**线性增长** → 越聊越贵 → 生产截断 `messages[-10:]`
 - DeepSeek = 标准 OpenAI 格式，`content` 是纯字符串（**不要加 type/text 对象**）
+- ⚠️ **函数签名与调用参数必须对得上**：`chat(user_msg)` 只收字符串却传了整个 messages 列表 → content 变列表 → 报 `missing field 'type'`。修法＝签名改收 `messages` 数组透传（W7 Day2 真 bug，2026-09-22 补录）
 
 ```python
 messages.append({"role": "user", "content": user_input})  # 记用户的话

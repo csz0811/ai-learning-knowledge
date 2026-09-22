@@ -130,7 +130,7 @@ W17 后立即有直播电商项目 + Codex 进场，先搭台会推迟交付。�
 |------|------|
 | AI产品架构七层模型 | 03-方法论/AI产品架构七层模型.md |
 | AI产品架构沟通模板 | 02-资产层/AI产品架构沟通模板.md |
-| 当前 AI 工具清单 | 02-资产层/待学知识点.md |
+| 当前 AI 工具清单 | 02-资产层/知识掌握台账.md |
 | OpenClaw 文档 | Mac: `~/Library/Application Support/QClaw/openclaw/node_modules/openclaw/docs`；Windows: `<OpenClaw安装目录>/node_modules/openclaw/docs`（以实际安装路径为准） |
 
 ---

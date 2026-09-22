@@ -1,4 +1,5 @@
 .git/
 .DS_Store
 .obsidian/workspace.json
+.obsidian/plugins/obsidian-git/data.json
 99-协作留言板/
