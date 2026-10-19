@@ -13,7 +13,7 @@
 ## ② 资产层（拿来就能用）
 - 业务背景包：`02-资产层/业务背景包.md`（给任何 AI 的第一份上下文）
 - 踩坑手册：`02-资产层/踩坑手册.md`（已录个人工作台 V1.0 真实坑 8 条，2026-08-29）
-- 代码配方卡：`02-资产层/代码模板/`（rag_pipeline_langchain1x.md + code_review_checklist_w17.md【2026-08-25 项目期已激活】+ localstorage_crud_vanillajs.md【2026-08-29 新增，含验证】）
+- 代码配方卡：`02-资产层/代码模板/`（rag_pipeline_langchain1x.md + code_review_checklist_w17.md【2026-08-25 项目期已激活】+ localstorage_crud_vanillajs.md【2026-08-29 新增，含验证】+ admin_panel_fastapi_sqlite_jwt.md【2026-10-20 新增，前后端分离后台骨架，含验证】）
 - 前端工具箱：`02-资产层/前端工具箱/`（代码组件 4 个 + 设计灵感 2 个）
 - 模板库：`02-资产层/模板库/`（Prompt模板库 + 产品需求全流程-角色提示词【2026-08-25 存档，含 EARS 规范】）
 - 可复用资源清单：`02-资产层/可复用资源清单.md`
